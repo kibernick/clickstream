@@ -9,8 +9,8 @@ if __name__ == "__main__":
     loggerSpark = logging.getLogger('py4j')
     loggerSpark.setLevel('WARNING')
 
-    consumer = Consumer()
-    ssc = consumer.categories()
+    consumer = Consumer(fetch_interval=2)
+    ssc = consumer.categories(window_duration=60, slide_duration=10)
 
     try:
         ssc.start()

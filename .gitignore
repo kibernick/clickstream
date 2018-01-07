@@ -111,3 +111,4 @@ venv.bak/
 # I, Developer
 metastore_db/
 data/production.csv
+checkpoint

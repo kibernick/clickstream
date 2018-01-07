@@ -43,12 +43,16 @@ class Consumer:
                 IndexError):  # row without enough elements
             return ''
 
-    def categories(self):
+    def categories(self, window_duration, slide_duration):
         ssc, rows = self._setup_streaming('Categories')
+        ssc.checkpoint("checkpoint")
 
         counts = rows.map(self._extract_url) \
             .map(lambda category: (category, 1)) \
-            .reduceByKey(lambda a, b: a + b)
+            .reduceByKeyAndWindow(lambda x, y: x + y,
+                                  lambda x, y: x - y,
+                                  windowDuration=window_duration,
+                                  slideDuration=slide_duration)
         counts.pprint()
 
         return ssc
