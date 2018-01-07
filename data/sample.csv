@@ -1,0 +1,5 @@
+"collector_tstamp","domain_sessionid","domain_userid","page_urlpath","os_timezone","geo_timezone","geo_country","geo_region","geo_city","geo_longitude","geo_latitude","geo_region_name","dvce_type","os_family"
+"2016-02-01 00:11:04.862","8c4aab95-e6c6-4b34-879f-2ba0c16d6c39","dadb0971-163a-4454-8dd9-f4a16d3ea1c5","/nl/aankomst/vlucht/A20170701CND294/","Europe/Berlin","Europe/Amsterdam","NL","07","Opperdoes","4.804199","52.886597","Noord-Holland","Mobile","iOS"
+"2016-03-01 00:11:06.148","c7b34efb-adc9-4411-9e6e-c557ca845409","c49c5565-9f77-4083-9ef5-ef367259462e","/en/","Europe/Berlin","Europe/Amsterdam","NL","07","Schiphol","4.75","52.300003","Noord-Holland","Mobile","Android"
+"2016-04-01 00:11:08.884","62168eef-d6ee-4e62-a2dd-da35fca6c782","c49c5565-9f77-4083-9ef5-ef367259462e","/en/","Europe/Berlin","Europe/Amsterdam","NL","07","Schiphol","4.75","52.300003","Noord-Holland","Mobile","Android"
+"2016-05-01 00:11:11.001","906cd247-7813-4d40-8143-c15cf9729e63","27109eb9-70e4-479e-a6f4-a7e3607a2b16","/nl/vertrek/lijst/","Europe/Berlin","Europe/Amsterdam","NL","03","Winterswijk","6.7234955","51.971207","Gelderland","Computer","Windows"

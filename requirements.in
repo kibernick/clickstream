@@ -1,0 +1,7 @@
+# dev requirements
+pip-tools
+ipython
+
+# project requirements
+kafka
+pyspark
