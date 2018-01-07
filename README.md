@@ -16,6 +16,8 @@ Make sure that `/usr/local/bin` is also added to your `$PATH`.
 
 Use `pyenv` or similar to manage your python versions and virtual environments. After creating a virtual environment, install dependencies with: `pip install -r requirements.txt`.
 
+To use production data, copy the CSV file into `data/production.csv`.
+
 ## Quickstart
 
 See the `make` commands in ![Makefile](./Makefile) for running the services locally.

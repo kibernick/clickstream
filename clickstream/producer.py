@@ -20,7 +20,7 @@ class Producer:
         """
         self.producer.send(self.topic, row)
         if jitter:
-            wait_seconds = int(random.triangular(low=0, high=5, mode=0))  # Simulate random incoming stream.
+            wait_seconds = int(random.triangular(low=0, high=3, mode=0))  # Simulate random incoming stream.
             time.sleep(wait_seconds)
 
     def read_file(self, filename, skip_header=True):

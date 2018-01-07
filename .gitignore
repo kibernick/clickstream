@@ -108,4 +108,6 @@ venv.bak/
 *.class
 *.log
 
+# I, Developer
 metastore_db/
+data/production.csv
