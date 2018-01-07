@@ -1,0 +1,21 @@
+kafka:
+  image: spotify/docker-kafka
+  ports:
+      - "9092:9092"
+      - "2181:2181"
+  hostname: kafka
+  environment:
+    - KAFKA=localhost:9092
+    - ZOOKEEPER=localhost:2181
+    TOPICS: clickstream
+  expose:
+    - "2181"
+    - "9092"
+
+spark:
+  image: sequenceiq/spark
+  command: bash
+  volumes:
+    - ./target/scala-2.10:/app
+  links:
+   - kafka
