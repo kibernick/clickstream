@@ -112,3 +112,5 @@ venv.bak/
 metastore_db/
 data/production.csv
 checkpoint
+output/*
+!output/.gitkeep

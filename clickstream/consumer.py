@@ -54,5 +54,6 @@ class Consumer:
                                   windowDuration=window_duration,
                                   slideDuration=slide_duration)
         counts.pprint()
+        counts.saveAsTextFiles('output/categories')
 
         return ssc
