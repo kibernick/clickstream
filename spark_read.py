@@ -1,3 +1,6 @@
+"""
+A simple Spark stream that reads from the `clickstream` Kafka topic and outputs the messages to stdout.
+"""
 import logging
 
 from clickstream.consumer import Consumer

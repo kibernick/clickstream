@@ -36,19 +36,6 @@ See the `make` commands in ![Makefile](./Makefile) for running the services loca
 10. The categories should appear counted, with the sliding interval of 10 seconds.
 11. The output of the previous stream should also appear writen to the file system in the `output` directory.
 
-## Troubleshooting
-
-### `java.lang.NullPointerException` when running `spark-shell`
-
-Spark is incompatible with Java 9, which is the version brew cask install java will install if it is up to date. If you did install Java 9, what you need to do is install Java 8 instead:
-
-```bash
-$ brew cask uninstall java
-$ brew tap caskroom/versions
-$ brew cask search java
-$ brew cask install java8
-```
-
 ## TODO
 
 * Remove log4j logs! Could not find a way to use the ![log4j.properties](./config/log4j.properties) with the `spark-submit` command.

@@ -1,3 +1,6 @@
+"""
+A simple script that streams data from an input CSV file into the "clickstream" Kafka topic.
+"""
 import logging
 import argparse
 

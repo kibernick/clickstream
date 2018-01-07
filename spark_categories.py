@@ -1,3 +1,6 @@
+"""
+A more advanced Spark stream that aggregates the clickstream per category.
+"""
 import logging
 
 from clickstream.consumer import Consumer
