@@ -2,6 +2,8 @@
 
 Sample project that processes clickstream data using Kafka and Apache Spark.
 
+![Clickstream](background.png "Clickstream")
+
 Install `scala`, `kafka` and `apache-spark` using homebrew.
 
 ```bash
